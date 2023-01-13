@@ -1,28 +1,32 @@
 body{
-    background: white;
-    color: blue;
+    /*background: white;*/
+    color: rgb(17, 17, 17);
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
     margin-top: 100px;
-
+    background-image: url("../Web Page/images/mountain.jpg");
+    background-size: cover;
+    
 }
 
-.headshot{
+/*.headshot{
     border: 1px solid #ffffff;
     border-radius: 80px;
-}
+}*/
 
 .pp{
     margin-top: 10px;
 }
 
 .printers{
-    display: inline;
+    /*display: inline;
     width: 200px;
     padding: 20px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .fusion{
@@ -48,18 +52,23 @@ body{
      margin-top: 10px;
      margin-bottom: 10px;
 }
+.button-buy:hover {
+    background: rgb(206, 105, 23);
+    color: #111011
+}
 
 .me{
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #0a0a0a;
     border-radius: 10px;
+    color: #080808;
 
 }
 
 .list-me{
     font-size: 20px;
     font-weight: bold;
-    color: #282828;
+    color: #080808;
     text-align: left;
 }
 
@@ -74,15 +83,70 @@ body{
 .input-text{
     display: block;
     line-height: 24px;
-    width: 150px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 1px solid black;
+    border: 1px solid rgb(248, 243, 243);
     border-radius: 24px;
-    color: off white;
+    color: white;
 
+}
+
+.media-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 90px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #317cc1;
+    overflow: hidden;
+    border: 2px solid #317cc1;
+    color: #161a18;
+    text-align: center;
+}
+.media-button:hover {
+    color: rgb(211, 209, 209);
+    background: rgb(206, 105, 23);
+}
+.media-button :hover:after {
+    width: 100%;
+}
+.media-button:after {
+    content: "Connect";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease;
+    left: 18%;
+    top: 25%;
+    width: 0;
+    height: 100%;
+    background: white;
+    
+}
+  
+.media-list{
+    color: white;
+    text-align: center;
+    
+    
 }

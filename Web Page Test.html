@@ -3,27 +3,30 @@
 <head>
     <link rel="stylesheet" href="styles.css"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=devi<html lang="en"ce-width, initial-scale=1.0">
+    <script src="actions.js"></script>
     <title>Aaron's Portfolio</title>
-    <h1>Web Pages to Python Projects</h1>
+    <h1>Aaron Sylvis</h1>
     <div class="headshot">
     <!--<img src="me.jpg" width="10%">-->
     <img src="Me2.png" width="12%" alt="Aaron Headshot no backgorund">
     </div>
-</head>
+    <h2>Web Pages to Python Projects</h2>
+    </head>
 <body>
     <div class="pp">
         <h3>Project Portfolio</h3>
-         <p> This is the start of my self-taught coding lesson. Starting from YouTube videos from a few specific influencers,
-            to finding specific websites that are geared towards self-paced learning. Some you pay some are free,
-            the knowledge is priceless.</p>
+         <p id="bio-1"> This is the start of my self-taught coding lesson. Starting from YouTube videos from a few specific influencers,
+            to finding specific websites that are geared towards self-paced learning.</p> 
+            <p id="bio-1">Some you pay some are free, the knowledge is priceless.</p>
         <h4>Completed Projects</h4>
-        <li>Python Calculator: 2 Frameworks</li><p>Both calculators have basic function, need to add special features</p>
-        <li>Python Weather App</li><p>Works based on City, need to add icons for conditions</p>
+        <li>Python Calculator: Tkinter and PyQt5 Libraries</li><p id="bio">Both calculators have basic function, need to add special features</p>
+        <li>Python Weather App</li><p id="bio">Works based on City, need to add icons for conditions</p>
         <li>This Web Page</li>
         <h4>Work In Progress</h4>
         <li>Inventory UI</li>
-        <p>Python Front/Back End with SQLite connection for inventory database, features need tweaking
-                                    as well as live/updating db functions</p>
+        <p id="bio">Python Front/Back End with SQLite connection for inventory database, features need tweaking as well as live/updating db functions</p>
+        <p id="bio">Web Based Inventory Page that connects to SQL database for live counts and can be deployed with intranet connection to server</p>
         <li>This Web Page!</li>                           
     </div>
 
@@ -33,27 +36,27 @@
         <img src="3D printing.webp" width="25%" alt="GIF blue sweeping lines vase layer by layer">
         <img src="Ultimaker.jpg" width="25%" alt="Ultimaker 3d printer with product on laptop">
     </div>
-    <div class="button-buy">
-        <p>Buy Printer</p>
+    <div class="button-buy1">
+        <p><a id="button" href="https://www.amazon.com/Pro-Removable-Certified-8-66x8-66x9-84in-220x220x250mm/dp/B07GYRQVYV/ref=sr_1_4?keywords=creality+printer&amp;qid=1649357016&amp;sr=8-4&_encoding=UTF8&tag=coffeecarscoo-20&linkCode=ur2&linkId=7a44c56102f9de5763a518b276091208&camp=1789&creative=9325" target="_blank">
+            Buy Printer</a></p>
     </div>
-    <!--<a target="_blank" href="https://www.amazon.com/Pro-Removable-Certified-8-66x8-66x9-84in-220x220x250mm/dp/B07GYRQVYV/ref=sr_1_4?keywords=creality+printer&amp;qid=1649357016&amp;sr=8-4&_encoding=UTF8&tag=coffeecarscoo-20&linkCode=ur2&linkId=7a44c56102f9de5763a518b276091208&camp=1789&creative=9325">Creality Printer</a>-->
-
-
     <div class="fusion">
         <img src="Fusion360.jpeg" width="25%" alt="FusionCAM, Vise setup with two parts toolpath lines">
         <img src="Fusion360-2.png" width="25%" alt="FusionCAM, Additive part with 5th axis machining toolpath">
         <img src="Fusion360-3.png" width="25%" alt="Fusion, Generative design incased in faded block">
         <img src="Fusion360-4.gif" width="25%" alt="Fusion GIF, Toolpath simulation to machine cutting material">
     </div>
-    <div class="button-buy">
-        <p>Buy Fusion</p>
+    <div class="button-buy2">
+        <p><a id="button" href="https://www.dpbolvw.net/click-100498652-12217302" target="_blank">Buy Fusion 360</a></p>
     </div>
-    <!--<a href="https://www.dpbolvw.net/click-100498652-12217302" target="_blank">Fusion360</a>-->
+    <!--Fusion360</a>-->
     <div class="me">
     <h2>About Me!</h2>
         <div class="list-me">
         <li>Born in April of 1985</li>
+        <br />
         <li>Live 45 min North East of Buffalo, NY</li>
+        <br />
         <li>Fear of Heights...Yet still I climb</li>
         </div>
     </div>
@@ -65,24 +68,19 @@
             is and what someone can do with it.) I have been reading code for CNC machines and now 3D printers, which was not much different.
             But the process of how these items are made are total opposites, subtractive manufacturing to additive manufacturing. Reading code was the same,
             just a few differences from machine to machine, it is just like the difference between coding languages of Python and JavaScript. Syntax is slighty different
-            but the structure is there and all the content in between is your art coming to life. </p>
-        
+            but the structure is there and all the content in between is your art coming to life. </p>  
     </div>
     <div class="input-text">
-    <input type="text" placeholder="Enter Contact Info"><p>Connect with me for updates on my projects, or if you have a Freelance Project!</p>
+        <form method="post" action='name-list.html'>
+        <input id="textbox" type="email" placeholder="Enter Email or Social Media"><p>Connect with me for updates on my projects, or if you have a Web Project!</p>
             <p>Chatting is also accepted!</p>
-    </div>
-    <div class="media-button">
-        <p></p>
+        <input class="media-button" type="submit" value="Connect">
+        </form>
     </div>
     <div class="media-list">
-        <l>
-        <ol><img src="../Web Page/images/instagram.svg" width="3%">Instagram </ol>
-        <ol><img src="../Web Page/images/linkedin2.svg" width="3%">Linkedin </ol>
-        <ol><img src="../Web Page/images/email.svg" width="3%">Email </ol>
-        </l>
+        <label><a href="https://www.instagram.com/a_ron2005/" target="_blank"><img src="../images/instagram.svg" width="3%">Instagram </a></label>
+        <label><a href="https://www.linkedin.com/in/aaron-sylvis-09b8aa9b" target="_blank"><img src="../images/linkedin2.svg" width="3%">Linkedin </a></label>
     </div>
-    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L0,160L240,160L240,32L480,32L480,32L720,32L720,128L960,128L960,320L1200,320L1200,32L1440,32L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"></path></svg> -->
-
+    <svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#317cc1" fill-opacity="1" d="M0,64L0,160L240,160L240,32L480,32L480,32L720,32L720,128L960,128L960,320L1200,320L1200,32L1440,32L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"></path></svg>
 </body>
 </html>

@@ -47,11 +47,12 @@ li{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.project{
+#project{
     font-weight: bold;
-    color: var(--blue-button);
+    color: red;
     font-style: italic;
-    text-decoration: none;
+    text-decoration: underline;
+    
 }
 .printers{
     display: flex;

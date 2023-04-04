@@ -1,9 +1,13 @@
+:root{
+    --blue-button: #317cc1;
+        
+}
 h1{
-    background-image: url("../images/wave.svg");
+    /*background-image: url("../images/wave.svg");*/
     
 }
 h2{
-    color: #317cc1;
+    color: var(--blue-button);
     
 }
 body{
@@ -31,7 +35,7 @@ body{
 
 li{
     font-weight: bold;
-    color:#317cc1;
+    color: var(--blue-button);
     font-style: italic;
 }
 
@@ -43,7 +47,12 @@ li{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.project{
+    font-weight: bold;
+    color: var(--blue-button);
+    font-style: italic;
+    text-decoration: none;
+}
 .printers{
     display: flex;
     justify-content: center;
@@ -62,9 +71,9 @@ li{
 
 .button-buy1{
      color: white;
-     border: 1px solid #317cc1;
+     border: 1px solid var(--blue-button);
      border-radius: 50px;
-     background: #317cc1;
+     background: var(--blue-button);
      padding-left: 10px;
      padding-right: 10px;
      padding-top: 5px;
@@ -85,9 +94,9 @@ li{
 
 .button-buy2{
     color: white;
-    border: 1px solid #317cc1;
+    border: 1px solid var(--blue-button);
     border-radius: 50px;
-    background: #317cc1;
+    background: var(--blue-button);
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
@@ -114,7 +123,7 @@ li{
 .me{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    border: 3px solid #317cc1;
+    border: 3px solid var(--blue-button);
     border-radius: 10px;
     color: #080808;
     list-style: none;
@@ -136,7 +145,7 @@ li{
 
 .exp{
     padding: 20px;
-    background: #317cc1;
+    background: var(--blue-button);
     color: black;
     font-size: 20px;
     border-radius: 10px;
@@ -154,14 +163,14 @@ li{
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 3px solid #317cc1;
+    border: 3px solid var(--blue-button);;
     border-radius: 24px;
     color: black;
 
 }
 
 #textbox{
-    border: 3px solid #317cc1;
+    border: 3px solid var(--blue-button);
 }
 
 .media-button {
@@ -185,10 +194,10 @@ li{
     outline: none;
     border-radius: 30px;
     z-index: 0;
-    background: #317cc1;
+    background: var(--blue-button);
     overflow: hidden;
-    border: 2px solid #317cc1;
-    color: #161a18;
+    border: 2px solid var(--blue-button);
+    color: var(--blue-button)
     text-align: center;
 }
 .media-button:hover {
@@ -214,4 +223,14 @@ li{
 .media-list, a {
     color: black;
     text-decoration: none;
+}
+
+@media(max-width: 750px){
+    :root{
+        --blue-button: #666869;
+    background: radial-gradient(
+        #ccc 20%,
+        #223 100%
+     );
+    }  
 }
